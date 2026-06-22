@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "fullname" . }}-tests
+data:
+  run.sh: |-
+    @test "Testing Jenkins UI is accessible" {
+<<<<<<< HEAD
+      curl --retry 24 --retry-delay 10 {{.Release.Name}}-jenkins:8080/login
+=======
+      curl --retry 12 --retry-delay 10 {{ .Release.Name }}-jenkins:8080/login
+>>>>>>> cf13f6a (Use consistent whitespace in template placeholders (#1437))
+    }
