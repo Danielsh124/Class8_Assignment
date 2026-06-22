@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YOUR_USERNAME/YOUR_PRIVATE_REPO.git
+    repoURL: https://github.com/Danielsh124/Class8_Assignment.git
     targetRevision: main
-    path: jenkins-chart
+    path: charts/jenkins
     helm:
       valueFiles:
         - values.yaml
